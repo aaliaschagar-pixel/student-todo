@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student To-Do Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Student To-Do Dashboard</h1>
+
+  <!-- Add Task -->
+  <section class="add-task">
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button onclick="addTask()">Add</button>
+  </section>
+
+  <!-- Tasks -->
+  <section>
+    <h2>Tasks for Today</h2>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Smart Suggestion -->
+  <section class="suggestion">
+    <h2>What Should I Do Now?</h2>
+    <p id="suggestionText">Add tasks to get suggestions</p>
+    <button onclick="suggestTask()">Suggest</button>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
