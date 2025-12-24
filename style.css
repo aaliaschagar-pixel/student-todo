@@ -1,0 +1,56 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e0eaff, #f9f9ff);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  background: white;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #4f6dff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.low { color: green; }
+.medium { color: orange; }
+.high { color: red; }
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
